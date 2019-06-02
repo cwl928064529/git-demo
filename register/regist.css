@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: hidden; 
+}
+body{
+	background-color: #f6f5fa;
+}
+.wrapper{
+	width: 980px;
+	height: 2080px;
+	border: 1px solid #d6d6d6;
+}
+/*会员注册导航栏*/
+.wrapper .nav{
+	width: 980px;
+	height: 118px;
+	background-color: #fff;
+}
+.wrapper .nav .return{
+	font-size: 60px;
+	line-height: 118px;
+	margin-left: 20px;
+	font-weight: bold;
+	color: #0d83c9;
+}
+.wrapper .nav .nav_title{
+	position: absolute;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: simhei; /*黑体*/
+	line-height: 118px;
+	left: 50%;
+	margin-left: -2em;
+}
+/*输入信息块*/
+.wrapper .info{
+	position: absolute;
+	width: 978px;
+	height: 414px;
+	top: 200px;
+	border-top: 1px solid #d6d6d6;
+	border-bottom: 1px solid #d6d6d6;
+	font-size: 44px;
+	background-color: #fff;
+}
+.wrapper .info .phone{
+	float: right;
+	width: 940px;
+	height: 117px;
+	border-bottom: 1px solid #d6d6d6;
+	line-height: 117px;
+	letter-spacing: 0.5em;
+	font-family: simhei;
+}
+.wrapper .info .phone .phoneNumber{
+	width: 628px;
+	height: 90px;
+	font-size: 44px;
+	border: none;
+	padding: 15px;
+}
+.wrapper .info .pic_check{
+	float: right;
+	width: 940px;
+	height: 162px;
+	border-bottom: 1px solid #d6d6d6;
+	line-height: 162px;
+	font-family: simhei;
+}
+.wrapper .info .pic_check .picCheck{
+	width: 380px;
+	height: 130px;
+	font-size: 44px;
+	border: none;
+	padding: 15px;
+	margin-left: 1em;
+}
+.wrapper .info .pic_check .code{
+	width: 294px;
+	height: 160px;
+	border: 1px solid #d6d6d6;
+	float: right;
+}
+.wrapper .info .code_check{
+	float: right;
+	width: 940px;
+	height: 130px;
+	line-height: 130px;
+	letter-spacing: 0.5em;
+	font-family: simhei;
+}
+.wrapper .info .code_check .codeNumber{
+	width: 380px;
+	height: 100px;
+	font-size: 44px;
+	border: none;
+	padding: 15px;
+}
+.wrapper .info .code_check .getCode{
+	width: 258px;
+	height: 130px;
+	border: 1px solid #d6d6d6;
+	float: right;
+}
+/*登录注册按钮模块*/
+.button{
+	position: absolute;
+	height: 400px;
+	width: 978px;
+	/*border: 1px solid #d6d6d6;*/
+	top: 600px;
+
+}
+.button button{
+	margin-top:58px; 
+	height: 116px;
+	width: 900px;
+	font-size: 44px;
+	color: #fff;
+	background-color: #19ab18;
+	margin-left: 38px;
+	border-radius: 15px;
+}
