@@ -1,24 +1,29 @@
 var input = document.getElementsByTagName('input');
 var len = input.length;
 
-input[0].onfocus = function(){
-		if(this.value == "请输入手机号码"){
-			this.value = "";
-		}
-			
+for (var i = 0; i < len; i++) {
+    input[i].addEventListener('focus',function(e){
+        console.log(e.target.value);
+        if(e.target.value == "请输入手机号"){
+            e.target.value = "";
+        }else if(e.target.value == "请录入图片字符"){
+            e.target.value = "";
+        }else if(e.target.value == "请输入验证码"){
+            e.target.value = "";
+        }
+    },false)
 }
-input[1].onfocus = function(){
-		this.value = "";
+
+for (var i = 0; i < len; i++) {
+    input[i].addEventListener('blur',function(e){
+        console.log(e.target.value);
+        if(e.target.value == ""){
+            e.target.value = "请输入手机号";
+        }else if(e.target.value == ""){
+            e.target.value = "请录入图片字符";
+        }else if(e.target.value == ""){
+            e.target.value = "请输入验证码";
+        }
+    },false)
 }
-input[2].onfocus = function(){
-		this.value = "";
-}
-input[0].onblur = function(){
-		this.value = "请输入手机号码";
-}
-input[1].onblur = function(){
-		this.value = "请录入图片字符";
-}
-input[2].onblur = function(){
-		this.value = "请输入验证码";
-}
+
