@@ -20,12 +20,14 @@
 			<div class="pic_check">
 				<span>图片验证</span>
 				<input type="text" class="picCheck" value="请录入图片字符">
-				<div class="code"></div>
+				<div class="code" id="picCode"></div>
 			</div>
 			<div class="code_check">
 				<span>验证码</span>
 				<input type="text" class="codeNumber" value="请输入验证码">
-				<div class="getCode"></div>
+				<div class="getCode">
+					<input type="button" id="verCodeBtn" value="获取验证码" onclick="settime(this);">
+				</div>
 			</div>
 		</div>
 		<!-- 登录注册按钮模块 -->
@@ -34,10 +36,16 @@
 				<button>登录</button>
 			</div>
 			<div class="regisButton">
-				<button>注册</button>
+				<a href="file:///C:/Users/ASUS/Desktop/git-demo/register/regist.html">
+					<button>注册</button>					
+				</a>
 			</div>
 		</div>
 	</div>
+
+	<script src="jquery.js"></script>
 	<script src="enter.js"></script>
+	<script src="layer/mobile/layer.js"></script>
+    <script src="layer/layer.js"></script>
 </body>
 </html>
