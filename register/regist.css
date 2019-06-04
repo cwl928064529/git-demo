@@ -3,6 +3,8 @@
 	padding: 0;
 	overflow-x: hidden;
 	overflow-y: hidden; 
+	list-style: none;
+	text-decoration: none;
 }
 body{
 	background-color: #f6f5fa;
@@ -78,10 +80,12 @@ body{
 	margin-left: 1em;
 }
 .wrapper .info .pic_check .code{
-	width: 294px;
+	width: 280px;
 	height: 160px;
 	border: 1px solid #d6d6d6;
 	float: right;
+	background-image: url('img/yan.jpg');
+	background-size: 278px 154px;
 }
 .wrapper .info .code_check{
 	float: right;
@@ -104,6 +108,12 @@ body{
 	border: 1px solid #d6d6d6;
 	float: right;
 }
+.wrapper .info .code_check .getCode #verCodeBtn{
+	width: 258px;
+	height: 130px;
+	border: 1px solid #d6d6d6;
+	font-size: 36px;
+}
 /*登录注册按钮模块*/
 .button{
 	position: absolute;
@@ -122,4 +132,35 @@ body{
 	background-color: #19ab18;
 	margin-left: 38px;
 	border-radius: 15px;
+}
+
+/*layer*/
+.layui-layer-content{ /*修改弹窗内容样式*/
+	font-size: 44px;
+	margin-left: 20px;
+}
+.layui-layer-setwin{
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	/*border: 1px solid black;*/
+	top: 0;
+	margin-top:-20px;
+}
+a.layui-layer-ico.layui-layer-close.layui-layer-close1{
+	height: 60px;
+	width: 60px;
+	margin: 0;
+	background-position: -360px -60px;
+	background-repeat: no-repeat;
+	background-size: 420px 122px;
+}
+div.layui-layer-btn.layui-layer-btn-{
+	height: 50px;
+}
+a.layui-layer-btn0, a.layui-layer-btn1{
+	font-size: 30px;
+	font-weight: lighter;
+	height: 50px;
+	width: 60px;
 }

@@ -10,33 +10,41 @@
 	<div class="wrapper">
 		<!-- 会员注册导航栏 -->
 		<div class="nav">
-			<span class="return"><</span>
+			<a href="file:///C:/Users/ASUS/Desktop/git-demo/enter/enter.html">
+				<span class="return"><</span>
+			</a>
 			<span class="nav_title">会员注册</span>
 		</div>
 		<!-- 输入信息模块 -->
 		<div class="info">
 			<div class="phone">
 				<span>手机号</span>
-				<input type="text" class="phoneNumber" value="请输入手机号">
+				<input type="text" name="phoneNumber" class="phoneNumber" value="请输入手机号">
 			</div>
 			<div class="pic_check">
 				<span>图片验证</span>
 				<input type="text" class="picCheck" value="请录入图片字符">
-				<div class="code"></div>
+				<div class="code" id="picCode"></div>
 			</div>
 			<div class="code_check">
 				<span>验证码</span>
 				<input type="text" class="codeNumber" value="请输入验证码">
-				<div class="getCode"></div>
+				<div class="getCode">
+					<input type="button" id="verCodeBtn" value="获取验证码" onclick="settime(this);">
+				</div>
 			</div>
 		</div>
 		<!-- 登录注册按钮模块 -->
 		<div class="button">
 			<div class="regisButton">
-				<button>注册</button>
+				<button class="regist">注册</button>
 			</div>
 		</div>
 	</div>
+
+	<script src="jquery.js"></script>	
 	<script type="text/javascript" src="regist.js"></script>
+	<script src="layer/mobile/layer.js"></script>
+    <script src="layer/layer.js"></script>
 </body>
 </html>
