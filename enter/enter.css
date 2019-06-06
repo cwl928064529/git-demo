@@ -115,7 +115,8 @@ body{
 	top: 754px;
 
 }
-.button button{
+.button .login_button,
+.button .login_register{
 	margin-top:58px; 
 	height: 116px;
 	width: 900px;
