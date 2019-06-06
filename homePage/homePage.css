@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-size:40px;
+}
+/*固定搜索块*/
+.wrapper .search{
+    position: fixed;
+    width:100%;
+    height:130px;
+    border:1px solid #000;
+}
+.wrapper .search .search-box{
+    width:100%;
+    height:130px;
+    border:1px solid #000;
+}
+/*轮播图*/
+.wrapper .lunbotu{
+    position:absolute;
+    width:980px;
+    height:360px;
+    margin:130px auto;
+    overflow: hidden;
+    /*border:1px solid #000;*/
+    border-radius: 0 0 60px 60px;
+}
+.wrapper .lunbotu ul.imgBox{
+    position: absolute;
+    top:0;
+    left:0;
+    width:5880px;
+    height:360px;
+}
+.wrapper .lunbotu ul li{
+    display:inline-block;
+}
+.wrapper .lunbotu ul li img{
+    width:980px;
+    height:360px;
+}
