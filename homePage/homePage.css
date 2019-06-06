@@ -3,25 +3,59 @@
     padding:0;
     list-style:none;
     font-size:40px;
+    text-decoration: none;
 }
 /*固定搜索块*/
 .wrapper .search{
+    z-index: 999;
     position: fixed;
     width:100%;
-    height:130px;
-    border:1px solid #000;
+    height:120px;
+    /*border:1px solid #000;*/
 }
 .wrapper .search .search-box{
-    width:100%;
-    height:130px;
-    border:1px solid #000;
+    float: left;
+    width:80%;
+    height:70px;
+    border:1px solid #eee;
+    margin:40px;
+    margin-top: 25px;
+    border-radius: 80px;
+    background-color: #fff;
+}
+.wrapper .search .search-box>img{
+    display: inline-block;
+    width:40px;
+    height:40px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.wrapper .search .search-box>span{
+    margin-left: 40px;
+}
+
+.wrapper .search .myid{
+    float: right;
+}
+.wrapper .search .myid span:after{
+    position: relative;
+    color: #fff;
+    content: "我的";
+    top: 40px;
+    right: 28px;
+}
+.wrapper .search .myid>span{
+    display: inline-block;
+    background-image: url('img/pics.png');
+    background-position: 0 -467.5px;
+    background-repeat: no-repeat;
 }
 /*轮播图*/
 .wrapper .lunbotu{
     position:absolute;
     width:980px;
-    height:360px;
-    margin:130px auto;
+    height:480px;
+    /*margin:120px auto;*/
     overflow: hidden;
     /*border:1px solid #000;*/
     border-radius: 0 0 60px 60px;
@@ -38,5 +72,103 @@
 }
 .wrapper .lunbotu ul li img{
     width:980px;
-    height:360px;
+    height:480px;
+}
+/*导航栏*/
+.wrapper .nav-title{
+    position: absolute;
+    width: 90%;    /*882px*/
+    height: 200px;
+    z-index: 99;
+    border: 1px solid #777;
+    top: 400px;
+    left: 50%;
+    margin-left: -441px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+.wrapper .nav-title .items{
+    margin-left: 10px;
+}
+.wrapper .nav-title .items li{
+    float: left;
+}
+.wrapper .nav-title .items li a{
+    display: inline-block;
+    width: 170px;
+    height: 190px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+.wrapper .nav-title .items li a span{
+    font-size: 36px;
+}
+.wrapper .nav-title .items li a .pic{
+    width: 170px;
+    height: 110px;
+    /*border: 1px solid black;*/
+    display: inline-block;
+}
+.wrapper .nav-title .items li a #lygl{
+    background-image: url('img/navpic.png');
+    background-size: 500px 310px;
+    background-position: -5px -100px;
+    background-repeat: no-repeat;
+}
+.wrapper .nav-title .items li a #food{
+    background-image: url('img/navpic.png');
+    background-size: 500px 310px;
+    background-position: -5px 0px;
+    background-repeat: no-repeat;
+}
+.wrapper .nav-title .items li a #homestay{
+    background-image: url('img/navpic.png');
+    background-size: 500px 330px;
+    background-position: -165px -110px;
+    background-repeat: no-repeat;
+}
+.wrapper .nav-title .items li a #route{
+    background-image: url('img/navpic.png');
+    background-size: 500px 310px;
+    background-position: -5px -198px;
+    background-repeat: no-repeat;
+}
+.wrapper .nav-title .items li a #mycenter{
+    background-image: url('img/navpic.png');
+    background-size: 500px 330px;
+    background-position: -320px -110px;
+    background-repeat: no-repeat;
+}
+/*游记*/
+.wrapper .youji{
+    position: absolute;
+    width: 90%;    /*882px*/
+    height: 180px;
+    border: 1px solid #777;
+    top: 680px;
+    left: 50%;
+    margin-left: -441px;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 180px;
+}
+.wrapper .histery .histeryyj{
+    position: absolute;
+    width: 90%;    /*882px*/
+    height: 620px;
+    border: 1px solid #777;
+    top: 940px;
+    left: 50%;
+    margin-left: -441px;
+    background-color: #fff;
+    border-radius: 30px;
+    line-height: 80px;
+}
+h4{
+    text-align: center;
+    letter-spacing: 1em;
+}
+p{
+    text-indent: 2em; /*每段话前空两个字长*/
 }

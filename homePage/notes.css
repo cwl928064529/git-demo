@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+/*写游记导航栏*/
+.wrapper .nav{
+	width: 100%;
+	height: 140px;
+	/*border: 1px solid black;*/
+	text-align: center;
+	line-height: 140px;
+}
+.wrapper .nav a .return{
+	float: left;
+	font-size: 80px;
+	margin-left: 40px;
+}
+.wrapper .nav .nav_title{
+	font-size: 60px;
+	letter-spacing: 0.05em;
+	font-family: simhei;   /*黑体*/
+}
+.wrapper .nav a .publish{
+	font-size: 44px;
+	float: right;
+	margin-right: 40px;
+	color: #777;
+}
+/*提示标题*/
+.wrapper .prompt{
+	width: 100%;
+	height: 140px;
+	/*border: 1px solid black;*/
+	text-align: center;
+	line-height: 140px;
+	margin-top: 50px;
+}
+.wrapper .prompt .prompt-title{
+	width: 980px;
+	height: 140px;
+	/*border: 1px solid black;*/
+	font-size: 60px;
+	text-indent: 0.5em;
+	font-weight: bold;
+	color: #777;
+	border: none;
+}
+.wrapper .content{
+	position: absolute;
+	top: 400px;
+}
+.wrapper .content textarea{
+	width: 980px;
+	height: 980px;
+	font-size: 44px;
+	font-family: simhei;
+	font-weight: lighter;
+	border: none;
+	text-indent: 0.8em;
+}
